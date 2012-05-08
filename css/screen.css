@@ -4,259 +4,341 @@
 These styles are intended to put back in some of the expected
 formatting of common tags. They are replicated in screen.css
 and print.css.
-Although you can add more here and load base.css in your XHTML,
-you might consider just adding any additional base styles to
-your own screen.css and/or print.css files.
 */
 
-/*Re-add bold to headings, b, and strong*/
+/* Bold on headings, b, and strong */
 h1,h2,h3,h4,h5,h6,b,strong { font-weight: bold; }
 /*Re-add italic to i, em, and cite.*/
 i,em,cite { font-style: italic; }
-/*Re-add dotted border and help cursor to abbr and acronym*/
+/* Dotted border and help cursor to abbr and acronym: */
 abbr,acronym { border-bottom: 1px dotted; cursor: help; }
 
-div#page {
- padding-left: 80px;
+html.invert {
+	background-color: #000000;
 }
 
+/* Body */
+
 body {
- font-family: Helvetica, Arial, sans-serif;
- background-image: url('gfx/jpg');
- line-height: 1;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1;
+  font-weight: normal; 
+  font-size: 100%;
+  color: #000000;
+  /*background-color: #D8D8D8;*/
 }
-	 
-a {
- text-decoration:none;
+
+body#body-invert a:visited {
+	color: #FFFFFF;
 }
-	
-a:hover {
- text-decoration:underline;
+
+body#body-invert h2 {
+	color: #FFFFFF;
+}
+
+
+/* Major Divisions */
+
+/* Page (Containing Div) */
+
+div#page {
+	width: 960px;
+	margin-top: 22px; 
+	margin-left: 75px;
+	/*background-color: #E8E8E8;*/
+}
+
+div#page-invert {
+	width: 960px;
+	color: #FFFFFF;
+	padding-top: 22px; 
+	padding-left: 75px;
+}
+
+div#page-detail {
+	margin-top: 40px;
+	margin-left: 80px;
+	width: 600px;
+}
+
+
+/* Header */
+
+div#header ul.accessibility {
+  position: absolute;
+  left: -10000px;
 }
 
 h1 {
- font-size: 75pt; 
- margin-bottom: 20px;
- margin-top: 5px; 
- text-decoration: none;
- color: black;
-}
-
-h1 a:link {
- color: black;
+  font-size: 4.25em; /* 51pt / 12pt */
+  color: black;
+  margin-right: 1px;
+  float: left;
+  /*background-color: #E8E8E8;*/
 }
 
 h1 a:visited {
- color: black;
- text-decoration: none;
+  color: black;
 }
 
 h1 a:hover {
- text-decoration: none;
+	text-decoration: none;
 }
+
+
+/* Content */
+
+div#content {
+	margin-top: 20px;
+}
+
+
+/* Headers */
  
 h2 {
- margin-top: 75px; 
- margin-bottom: 20px;
- margin-left: 0px;
- font-size: 32pt;
+  margin-left: 4px; 
+  font-size: 2.5em;  /* 30pt / 12pt */
 }
 
-h3.resume {
- font-size: 18pt;
- margin-left: 300px;
- margin-top: 37px;
- margin-bottom: 20px;
+h2 a:visited {
+	color: black;
 }
 
-ul {
- margin-bottom: 0px;
+h2 a:hover {
+	text-decoration: none;
 }
 
-ul#contact-info {
+h3 {
+  margin-top: 27px; /* align with n-bottom of first line of side nav */
+  font-size: 1.5em; /* 18pt / 12pt */
 }
 
+h3#martini-h3 {
+	float: left;
+}
+
+h4.portfolio {
+  margin-left: 300px;
+  margin-bottom: 15px;
+  margin-top: 37px;
+}
+
+
+/* Divs */
+
+div#inset {
+  margin-left: 295px;
+  padding-bottom: 500px;
+ /*background-color: #F8F8F8;*/
+}
+
+div#cover {
+  width: 680px;
+  margin-left: 260px;
+  padding-right: 200px;
+  padding-bottom: 500px;
+}
+
+div#constrain-text {
+	width: 576px;
+}
+
+div#go-back {
+  float: right;
+}
+
+div#row-two {
+	margin-left: 81px;
+}
+
+/* Images */
+
+img#kas {
+	border: 1px solid #000000;
+	margin-top: 15px;
+  margin-left: 1px;
+  margin-bottom: 20px;
+  width: 576px;
+  height: 376px;
+}
+
+img#connected {
+  border: 1px solid #000000;
+  margin-top: 15px;
+  margin-left: 1px;
+  margin-bottom: 20px;
+  width: 576px;
+	height: 310px;
+}
+
+img#chicagowiki {
+	width: 576px;
+	height: 352px;
+	border: 1px solid #000000;
+	margin-top: 15px;
+  margin-left: 1px;
+  margin-bottom: 20px;
+}
+
+img#martini {
+  position: relative;
+  border: 1px solid #000000;
+  width: 510px;
+  height: 496px;
+  top: 15px;
+	right: 78px;
+  margin-bottom: 31px; /* creates a 25px gap between bottom of image and following paragraph */
+  clear: both;
+}
+
+img#martini-invert {
+	position: relative;
+  border: 1px solid #FFFFFF;
+  width: 510px;
+  height: 496px;
+  top: 15px;
+  right: 78px;
+  margin-bottom: 33px; /* creates a 25px gap between bottom of image and following paragraph */
+  clear: both;
+}
+
+img#detail {
+	height: 714px;
+  width: 270px;
+  border-left: 1px solid #A0A0A0;
+  border-bottom: 1px solid #A0A0A0;
+}
+
+img#back {
+  margin-top: 15px;
+  margin-left: 1px;
+  margin-bottom: 20px;
+  width: 128px;
+  height: 83px;
+}
+
+img.icon {
+	margin: 40px;
+}
+
+img#big-switch {
+	float: right;
+	margin-top: 10px;
+	margin-right: 20px;
+	width: 28px;
+	height: 48px;
+}
+
+img#switch {
+	float: right;
+	margin-top: 26px; /*align with bottom edge of h3*/
+	margin-right: 153px;
+	width: 46px;
+	height: 21px;
+}
+
+img#kas-mini {
+	border: 1px solid #B0B0B0;
+	width: 256px;
+	height: 163px;
+}
+
+img#chicagowiki-mini {
+	position: absolute;
+	top: 227px;
+	width: 256px;
+	height: 157px;
+	border: 1px solid #B0B0B0;
+}
+
+img#connected-mini {
+  border-top: 1px solid #B0B0B0;
+  border-left: 1px solid #B0B0B0;
+  border-bottom: 1px solid #B0B0B0;
+  width: 97px;
+  height: 256px;
+	position: absolute;
+}
+
+img#martini-mini {
+  margin-left: 298px;
+  width: 256px;
+  height: 250px;
+	position: absolute;
+}
+
+
+/* Paragraph */
+
+p {
+	font-size: .91666666666667em; /* 11pt / 12pt */
+	line-height: 1.25;
+}
+
+p#contact {
+	margin-top: 40px;
+	margin-left: 25px;
+	font-size: 2em; /* 24pt / 12pt */
+}
+
+p.portfolio-two {
+  margin-top: 10px;
+  line-height: 1.25;
+}
+
+p#back-text {
+  font-size: 1.33333333333333em; /* 16pt / 12pt */
+  font-weight: bold;
+  text-align: center;
+  margin-left: 10px;
+  color: black;
+}
+
+
+/*Content Typography: Links*/	 
+
+a {
+	text-decoration:none;
+}
+	
+a:hover {
+  text-decoration:underline;
+}
+
+/*Navigation*/
+
+/*Main Navigation, float, auto width*/
 ul#navigation-main {
+	overflow: hidden; /*Necessary style for best handling floats*/
+  clear: both;
+  margin-left: 5px;
+  /*background-color: #F8F8F8;*/
 }
 
 ul#navigation-main li {
- float: left;
- font-size: 16pt;
- 
+  float: left; /*Float items to the left*/
+  display: inline; /*Fix a float issue in older IE browsers*/
+  font-size: 1.33333333333333em; /* 16pt / 12pt */
+  margin-right: 5px; /*Put some space between items*/
 }
 
 ul#navigation-main li a {
-	display: inline;
+	display: block; /*Maximize clickable area*/
 	margin-right: 5px;
-	padding: 32px 20px 12px 20px;
-	border-bottom: 1pt;
+	padding: 25px 20px 25px 20px;
 	text-decoration: none;
 	color: black;
 }
 
 ul#navigation-side {
- position: absolute;
- top: 255px;
- bottom: 50px;
- line-height: 2.0;
- left: 100px;
- text-decoration: none;
- display: inline-block;
+  line-height: 2.0;
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 20px;
+ /*background-color: #F8F8F8;*/
 }
 
 ul#navigation-side li a {
-list-style-type: none;
-text-decoration: none;
-color: black;
-}
-
-ul.details {
- padding-left: 20px;
- margin-bottom: 20px;
-}
-
-ul.details li {
- list-style-type: disc;
-}
-
-ul.details-spacing {
- margin-bottom: 10px;
-}
-
-ul.item-spacing {
- margin-bottom: 15px;
-}
-
-div.details-spacing {
- margin-bottom: 10px;
-}
-
-div.prof-exp-chunk {
- display: block; 
- width: 200px;
-}
-
-div#header {
- text-decoration: none;
-}
-
-div.resume-text {
- padding-left: 300px;
- padding-right: 221px;
- padding-top: 15px;
- line-height: 1.5;
-}
-
-div#contact {
- padding-left: 20px;
-}
-
-div.p-text {
- padding-left: 20px;
- padding-right: 221px;
- padding-top: 15px;
- line-height: 1.5;
-}
-
-img.portfolio {
- margin-left: 300px;
- border: 1pt solid;
- margin-bottom: 20px;
-}
-
-h3.portfolio {
- font-size: 18pt;
- margin-left: 300px;
- margin-bottom: 20px;
- margin-top: 38px;
-}
-
-h4.portfolio {
- margin-left: 300px;
- margin-bottom: 15px;
- margin-top: 37px;
-}
-
-p.portfolio {
- margin-left: 300px;
- margin-right: 221px;
- margin-bottom: 300px;
- margin-top: 37px;
- line-height: 1.5;
-}
-
-div.portfolio-sub{
- margin-left: 300px;
- margin-right: 320px;
- line-height: 1.5;
-}
-
-a.portfolio {
- margin-left: 300px;
- margin-bottom: 10px;
- }
- 
-p.sub-sub {
- margin-top: 10px;
- margin-bottom: 300px;
-}
-
-div.scroll-space {
- margin-bottom: 300px;
-}
-
-div#soundcloud {
- margin-top: 20px;
- margin-left: 300px;
-}
-
-div#soundcloud-sub {
- margin-top: 20px;
-}
-
-div#soundcloud-link {
- margin-top: 10px;
-}
-
-p.press-release {
- margin-left: 300px;
- margin-right: 221px;
- margin-bottom: 10px;
- line-height: 1.5;
-}
-
-div.twenty-px-top {
- margin-top: 25px;
-}
-
-div#header ul.accessibility {
- position: absolute;
- left: -10000px;
-}
-
-div#download a {
-	display: block;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	padding-right: 350px;
-	padding-left: 60px;
-	margin-top: 325px;
-	margin-left: 450px;
-	width: 200px;
-	background-color: #E8E8E8;
-	color: #686868;
-	font-weight: bold;
-	font-size: 600%;
-	border-width: 3px;
-	border-style: solid;
-	border-color: #C8C8C8;
-	text-decoration: none;
-	border-radius: 25px;
-	
-} 
-
-div#download a:hover {
-	box-shadow: 0px 5px 2px #888888;
-	border-color: #787878;
-
+  text-decoration: none;
+  color: black;
 }
