@@ -1,0 +1,17 @@
+
+* { color: black;}
+
+body
+
+	{font-family: Helvetica, Arial, sans-serif;
+	 background-image: url('gfx/Untitled_Texture_CXVII.jpg');}
+	 
+	
+	a:link {text-decoration:none; color:black;}
+	
+	div#contact-info {line-height:50%}
+	
+	div.description {line-height:30%}
+
+
+

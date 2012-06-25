@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" id="marshall-browning-com">
+
+<head>
+
+  <meta charset="utf-8" />
+  <title>costco.com nav edit: Marshall Browning</title>
+
+  <link rel="stylesheet" type="text/css" media="screen, print" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
+  <!--[if lte IE 7>
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/screen-ie.css" />
+  <![endif]-->
+  <link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
+
+
+  <!--Load the jQuery library-->
+  <script type="text/javascript" src="/js/jquery/jquery.js"></script>
+  <!--Load site-wide JavaScript-->
+  <script type="text/javascript" src="/js/site.js"></script>
+
+
+</head>
+
+<body>
+
+<div id="page">
+
+  <div id="header">
+
+    <h1>costco.com</h1>
+
+    <p class="tagline">
+      product nav edit
+    </p>
+
+    <ul class="accessibility">
+      <li><a href="#content">Jump to Content</a></li>
+    </ul>
+
+  </div>
+
+  <div id="content">
+	
+		<div id="redesign">
+	
+			<img id="wireframe-costco-nav" src="media/img/costco-nav-refined.png" alt="Costco wireframe nav redesign"/>
+		
+			<div id="top-descrip" class="description">
+				<ol>
+					<li><strong>Main Section</strong></li>
+						<ul class="supporting-two">
+							<li>With so many categories, the global nav is much easier to scan vertically. This also provides plenty of space to add a few new categories (net total of four added):</li>
+							<li id="added"><em>Added</em></li>
+								<ul class="nested-deep">
+									<li>Crafts &amp; Hobbies</li>
+									<li>Pharmacy</li>
+									<li>Photo</li>
+									<li>Office &amp; Paper</li>
+									<li class="gray">Gift Cards</li>
+									<li class="gray">Gift Certificates</li>
+									<li class="gray">Memberships</li>
+									<li class="gray">Tickets</li>
+								</ul>
+							<li id="removed"><em>Removed</em></li>
+								<ul class="nested-deep-float-right">
+									<li>Entertainment</li>
+									<li>Office Products</li>
+									<li>What's New (relocated)</li>
+									<li>View All (relocated)</li>
+								</ul>
+							<li class="clear"><em>Crafts &amp; Hobbies</em> was previously under <em>Entertainment</em>, where it didn't really belong. <em>Photo</em> and <em>Pharmacy</em> were pulled from one of the deleted horizontal navs. All of these labels represent departments, so they belong in the global nav.</li>
+							<li><em>Office Products</em> becomes <em>Office &amp; Paper</em>, so that <em>Invitations &amp; Announcements</em>, previously listed under <em>Entertainment</em>, can become one of its subcategories. People probably buy these items mostly from big office supply stores anyway, so this is a natural place to look.</li>
+						</ul>
+					<li class="new-section"><strong>Auxiliary Section</strong></li>
+					 	<ul class="supporting-two">
+								<li>The remaining four added items (beginning with <em>Gift Cards</em>) don't represent departments, but there's no department to put them under&mdash;they were previously subcategories of <em>Entertainment</em>, which made little sense. So they go in the global nav, separate from the departmental links, and clustered together to signify their commonality. This also gives these categories top-level visibility on the home page, where before they were buried or completely excluded.</li>
+								<li>Each of these links goes to its own page, so the content currently crammed together on the <em>Entertainment - Tickets &amp; Gift Certificates</em> page can be indexed accurately and displayed attractively.</li>
+								<li><em>Memberships</em> is the only completely new label. It was a necessary addition, as the many memberships on offer don't fit anywhere else.</li>
+								<li>All the subcategories that were listed under <em>Entertainment</em> have now been accounted for, except for <em>Video Games</em>. But it already appears under <em>Electronics</em>, which is a more conventional parent category anyway.</li>
+						</ul>
+					<li class="new-section"><strong>Supplemental Nav</strong></li>
+						<ul class="supporting-two">
+								<li>Finally, <em>What's New</em> and <em>View All</em> appear directly above the global nav, which highlights their relation to, and distinction from, the global nav's "departmental" categories. This also increases their visibility.</li>												
+						</ul>
+				</ol>
+			</div>
+			
+		</div>
+		
+		<a href="#original">
+			<div id="see-original-nav">
+				<img class="arrow" src="media/img/down-arrow.png" alt="arrow pointing down"/>
+				<p id="down-arrow" class="nav-text">See the original</p>
+			</div>
+		</a>
+		
+		<div id="original">
+			
+			<img id="costco" src="media/img/costco-nav-refined-orig.jpg" alt="screen shot of costco.com nav"/>
+			
+			<div class="description">
+				<ol>
+					<li><strong>Entertainment</strong></li> 
+						<ul class="supporting-two">
+							<li><em>Entertainment</em> doesn't accurately describe its contents:</li>
+								<ul class="nested-deep">
+									<li>Crafts &amp; Hobbies</li>
+									<li>Invitations &amp; Announcements</li>
+									<li>Photo Center</li>
+									<li>Tickets &amp; Gift Certificates</li>
+									<li>Video Games</li>
+								</ul>
+						</ul>
+						<ul class="supporting">
+							<li class="clear"><em>Invitations &amp; Announcements</em>, <em>Photo Center</em>, <em>Gift Certificates</em>, and even <em>Crafts &amp; Hobbies</em> don't really qualify as "entertainment."</li>
+							<li>Nor do the gift cards and membership offers listed on the <em>Tickets &amp; Gift Certificates</em> page, and as they're not linked in the global nav (or anywhere else), users may never know they exist.</li>
+								<li>The <em>Tickets &amp; Gift Certificates</em> page also has way too many types of content, which renders its page title meaningless and its content a jumbled mess.</li>
+						</ul>
+					<li class="new-section"><strong>What's New &amp; View All</strong></li>
+						<ul class="supporting-two">
+							<li>Every category in the global nav represents a department (<em>Furniture</em>, <em>Computers</em>, <em>Hardware</em>) except for <em>What's New</em> and <em>View All</em>. These are actually supplementary navigation options, so they shouldn't be presented as on the same level as the departmental categories.</li>
+						</ul>
+				</ol>
+			</div>
+			
+		</div>
+		
+		<a href="#page">
+			<div id="back-to-top">
+				<img class="arrow" src="media/img/up-arrow.png" alt="arrow pointing up"/>
+				<p id="up-arrow" class="nav-text">Back to top</p>
+			</div>
+		</a>
+
+  </div>
+
+</div>
+
+</body>
+
+</html>
