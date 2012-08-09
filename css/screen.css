@@ -14,7 +14,7 @@ i,em,cite { font-style: italic; }
 abbr,acronym { border-bottom: 1px dotted; cursor: help; }
 
 html.invert {
-	background-color: #000000;
+	background-color: #333;
 }
 
 /* Body */
@@ -24,7 +24,7 @@ body {
   line-height: 1;
   font-weight: normal; 
   font-size: 100%;
-  color: #000000;
+  color: #333;
   /*background-color: #D8D8D8;*/
 }
 
@@ -66,18 +66,18 @@ div#header ul.accessibility {
 
 h1 {
   font-size: 4.25em; /* 51pt / 12pt */
-  color: #000000;
+  color: #333;
   margin-right: 1px;
   float: left;
   /*background-color: #E8E8E8;*/
 }
 
 h1 a:link {
- color: black;
+ color: #333;
 }
 
 h1 a:visited {
-  color: black;
+  color: #333;
 }
 
 h1 a:hover {
@@ -107,11 +107,11 @@ h2 {
 }
 
 h2 a:link {
-	color: #000000;
+	color: #333;
 }
 
 h2 a:visited {
-	color: #000000;
+	color: #333;
 }
 
 h2 a:hover {
@@ -137,6 +137,10 @@ h3 {
 
 h3#martini-h3 {
 	float: left;
+}
+
+h3#design {
+	margin-bottom: 20px;
 }
 
 h4.portfolio {
@@ -177,9 +181,6 @@ div#wf-section {
 	width: 600px;
 	height: 505px;
 	margin-top: 10px;
-
-
-
 }
 
 div.wf-icon {
@@ -201,12 +202,35 @@ div#bottom-wf-icon {
 	margin-top: 20px;
 }
 
+div#about-main {
+	margin-top: 15px;
+}
+
+div#about-one {
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 600px;
+
+}
+
+div#about-one p {
+	float: left;
+	font-size: 12pt;
+	margin-bottom: 10px;
+	line-height: 1.0;
+	color: #333;
+}
+
+div#about-one h3 {
+	color: #333;
+}
+
 
 
 /* Images */
 
 img#kas {
-	border: 1px solid #000000;
+	border: 1px solid #333;
 	margin-top: 15px;
   margin-left: 1px;
   margin-bottom: 20px;
@@ -215,7 +239,7 @@ img#kas {
 }
 
 img#connected {
-  border: 1px solid #000000;
+  border: 1px solid #333;
   margin-top: 15px;
   margin-left: 1px;
   margin-bottom: 20px;
@@ -226,7 +250,7 @@ img#connected {
 img#chicagowiki {
 	width: 576px;
 	height: 352px;
-	border: 1px solid #000000;
+	border: 1px solid #333;
 	margin-top: 15px;
   margin-left: 1px;
   margin-bottom: 20px;
@@ -234,7 +258,7 @@ img#chicagowiki {
 
 img#martini {
   position: relative;
-  border: 1px solid #000000;
+  border: 1px solid #333;
   width: 510px;
   height: 496px;
   top: 15px;
@@ -381,7 +405,7 @@ p#back-text {
   font-weight: bold;
   text-align: center;
   margin-left: 10px;
-  color: #000000;
+  color: #333;
 }
 
 p.wf-title {
@@ -422,6 +446,11 @@ a:hover {
   text-decoration:underline;
 }
 
+a.link-underline {
+	color: #333;
+	text-decoration: underline;
+}
+
 div#page-invert a:link {
 	color: #FFFFFF;
 }
@@ -441,7 +470,12 @@ ul#about li {
 	list-style-type: disc;
 	font-size: 14pt;
 	line-height: 2.0;
-	color: #000000;
+	color: #333;
+}
+
+ul#about li#break {
+	line-height: 1.5;
+	margin-top: 5px;
 }
 
 ul#about-invert {
@@ -455,6 +489,17 @@ ul#about-invert li {
 	line-height: 2.0;
 	color: #FFFFFF;
 }
+
+ul.communication {
+	margin-left: 15px;
+	float: left;
+}
+
+ul.communication li{
+	list-style-type: disc;
+	margin-bottom: 10px;
+}
+
 
 /*Navigation*/
 
@@ -478,7 +523,7 @@ ul#navigation-main li a {
 	margin-right: 5px;
 	padding: 25px 20px 25px 20px;
 	text-decoration: none;
-	color: black;
+	color: #333;
 }
 
 ul#navigation-side {
@@ -491,7 +536,7 @@ ul#navigation-side {
 
 ul#navigation-side li a {
   text-decoration: none;
-  color: #000000;
+  color: #333;
 }
 
 ul.wf-icon-nav {
@@ -502,13 +547,13 @@ ul.wf-icon-nav {
 
 ul.wf-icon-nav li {
   list-style-type: disc;
-	color: #000000;
+	color: #333;
 	text-decoration: underline;
 }
 
 ul.wf-icon-nav li a {
 	text-decoration: none;
-  color: #000000;
+  color: #333;
 }
 
 ul.wf-icon-nav li a:hover {
@@ -517,6 +562,6 @@ ul.wf-icon-nav li a:hover {
 
 ul.wf-icon-nav li a:visited {
 	text-decoration: underline;
-  color: #000000;
+  color: #333;
 }
 
